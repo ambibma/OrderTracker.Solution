@@ -23,16 +23,22 @@ namespace Tracker.Tests
       Assert.AreEqual(typeof(Orders), testOrder.GetType());
     }
     [TestMethod]
-    public void GetOrderDate_StoresOrderInfo_String()
+    public void OrderConstructor_StoresOrderDate_String()
     {
       string result = testOrder.Date;
       Assert.AreEqual("2/24/23", result);
     }
     [TestMethod]
-    public void GetOrderQuantity_StoresOrderInfo_String()
+    public void OrderConstructor_StoresOrderQuantity_String()
     {
       string result = testOrder.Quantity;
       Assert.AreEqual("1", result);
+    }
+    [TestMethod]
+    public void OrderConstructor_StoresOrderProduct_String()
+    {
+      string result = testOrder.Product;
+      Assert.AreEqual("Muffins", result);
     }
   }
 }
