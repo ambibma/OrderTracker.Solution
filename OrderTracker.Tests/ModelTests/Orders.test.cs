@@ -22,5 +22,11 @@ namespace Tracker.Tests
     {
       Assert.AreEqual(typeof(Orders), testOrder.GetType());
     }
+    [TestMethod]
+    public void GetOrderData_StoresOrderInfo_String()
+    {
+      string result = testOrder.Date;
+      Assert.AreEqual("2/24/23", result);
+    }
   }
 }
