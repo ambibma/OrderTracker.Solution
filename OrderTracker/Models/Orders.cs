@@ -13,7 +13,7 @@ namespace Tracker.Models
     public Orders (string product, string quantity, string date){
       // Product = product;
       // Quantity = quantity;
-      // Date = date;
+      Date = date;
       // Id = _instances.Count;
       // _instances.Add(this);
     }
