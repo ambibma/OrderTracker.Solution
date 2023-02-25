@@ -14,7 +14,7 @@ namespace Tracker.Models
       Product = product;
       Quantity = quantity;
       Date = date;
-      Id = 1;
+      Id = _instances.Count;
       // _instances.Add(this);
     }
     public static void ClearAll()
