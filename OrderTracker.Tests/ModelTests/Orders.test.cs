@@ -40,5 +40,11 @@ namespace Tracker.Tests
       string result = testOrder.Product;
       Assert.AreEqual("Muffins", result);
     }
+    [TestMethod]
+    public void OrderConstructor_StoresOrderID_Int()
+    {
+      int result = testOrder.Id;
+      Assert.AreEqual(0, result);
+    }
   }
 }
