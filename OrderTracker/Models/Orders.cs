@@ -4,18 +4,22 @@ namespace Tracker.Models
 {
   public class Orders
   {
+    private static List<Orders> _instances = new List<Orders> {};
     public string Product {get; set;}
     public string Quantity {get; set;}
     public string Date {get; set;}
-    public int ID {get;}
-    private int _rollingCounter = new int();
+    public int Id {get;}
 
     public Orders (string product, string quantity, string date){
-      Product = product;
-      Quantity = quantity;
-      Date = date;
-      _rollingCounter++;
-      ID = _rollingCounter;
+      // Product = product;
+      // Quantity = quantity;
+      // Date = date;
+      // Id = _instances.Count;
+      // _instances.Add(this);
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();    
     }
   }
 }

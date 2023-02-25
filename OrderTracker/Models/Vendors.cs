@@ -8,7 +8,7 @@ namespace Tracker.Models
     public string Description {get; set;}
     public string Cost {get; set;}
     public int ID {get;}
-    private static int _rollingCounter = new Int();
+    private static int _rollingCounter = new int();
 
     public Orders Information {get; set;}
     private static List<Vendor> _instances = new List<Vendor>{};
