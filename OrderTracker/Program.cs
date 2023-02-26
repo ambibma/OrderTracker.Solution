@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace OrderTracker
 {
   class Program
@@ -14,9 +13,8 @@ namespace OrderTracker
 
       WebApplication app = builder.Build();
 
-      // app.UseDeveloperExceptionPage();
+      app.UseDeveloperExceptionPage();
       app.UseHttpsRedirection();
-
       app.UseRouting();
 
       app.MapControllerRoute(
