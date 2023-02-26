@@ -16,7 +16,7 @@ namespace Tracker.Tests
     [TestInitialize]
     public void TestInitialize()
     {
-      testVendor = new Vendor("Smith", "Smith's Coffee", "2/24/23", testOrder);
+      testVendor = new Vendor("Smith", "Smith's Coffee");
       testOrder = new Order("Muffins", "1", "2/24/23");
     }
     [TestMethod]
@@ -35,6 +35,12 @@ namespace Tracker.Tests
     {
       string result = testVendor.Description;
       Assert.AreEqual("Smith's Coffee", result);
+    }
+    [TestMethod]
+    public void VendorConstructor_StoresVendorID_Int()
+    {
+      int result = testVendor.Id;
+      Assert.AreEqual(0, result);
     }
     
     
