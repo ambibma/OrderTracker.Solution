@@ -54,6 +54,11 @@ namespace Tracker.Tests
     {
      Assert.AreEqual(1, Vendor.GetAll().Count);
     }
+    [TestMethod]
+    public void FindId_ReturnsVendorById_int()
+    {
+     Assert.AreEqual(testVendor, Vendor.Find(1));
+    }
     
     
     
