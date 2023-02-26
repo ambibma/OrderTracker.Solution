@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tracker.Models;
+using System.Collections.Generic;
 using System;
+using Tracker.Models;
 
 namespace Tracker.Tests
 {
@@ -41,6 +42,12 @@ namespace Tracker.Tests
     {
       int result = testVendor.Id;
       Assert.AreEqual(0, result);
+    }
+    [TestMethod]
+    public void AddOrder_StoresOrdersInList_Int()
+    {
+     testVendor.AddOrder(testOrder);
+     Assert.AreEqual(1, testVendor.Orders.Count);
     }
     
     

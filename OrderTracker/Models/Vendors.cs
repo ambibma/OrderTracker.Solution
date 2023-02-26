@@ -13,15 +13,18 @@ namespace Tracker.Models
   
     public Vendor (string name, string description){
       Name = name;
-      Description = description;
-      // Cost = cost;      
+      Description = description;    
       Id = _instances.Count;
-      // Information = inputOrder;
-      // _instances.Add(this);
+      _instances.Add(this);
+      Orders = new List<Order>{};
     }
     public static void ClearAll()
     {
       _instances.Clear();    
+    }
+    public void AddOrder(Order order)
+    {
+      // Orders.Add(order);
     }
   }
 }
