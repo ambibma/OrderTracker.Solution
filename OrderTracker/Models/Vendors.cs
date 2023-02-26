@@ -14,8 +14,8 @@ namespace Tracker.Models
     public Vendor (string name, string description){
       Name = name;
       Description = description;    
-      Id = _instances.Count;
       _instances.Add(this);
+      Id = _instances.Count;
       Orders = new List<Order>{};
     }
     public static void ClearAll()
@@ -32,7 +32,7 @@ namespace Tracker.Models
     }
     public static Vendor Find(int searchId)
     {
-      return _instances[searchId-1];
+      return _instances [searchId - 1];
     }
     
   }

@@ -14,8 +14,8 @@ namespace Tracker.Models
       Product = product;
       Quantity = quantity;
       Date = date;
-      Id = _instances.Count;
       _instances.Add(this);
+      Id = _instances.Count;
     }
     public static void ClearAll()
     {
@@ -23,7 +23,7 @@ namespace Tracker.Models
     }
     public static Order Find(int searchId)
     {
-      return _instances[searchId-1];
+      return _instances [searchId - 1];
     }
   }
 }
