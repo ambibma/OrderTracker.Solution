@@ -5,22 +5,22 @@ using Tracker.Models;
 namespace Tracker.Tests
 {
   [TestClass]
-  public class OrdersTests : IDisposable
+  public class OrderTests : IDisposable
   {
     public void Dispose()
     {
-      Orders.ClearAll();
+      Order.ClearAll();
     }
-    Orders testOrder;
+    Order testOrder;
     [TestInitialize]
     public void TestInitialize()
     {
-      testOrder = new Orders("Muffins", "1", "2/24/23");
+      testOrder = new Order("Muffins", "1", "2/24/23");
     }
     [TestMethod]
     public void OrderConstructor_CreatesNewOrder_Order()
     {
-      Assert.AreEqual(typeof(Orders), testOrder.GetType());
+      Assert.AreEqual(typeof(Order), testOrder.GetType());
     }
     [TestMethod]
     public void OrderConstructor_StoresOrderDate_String()
@@ -46,5 +46,6 @@ namespace Tracker.Tests
       int result = testOrder.Id;
       Assert.AreEqual(0, result);
     }
+    
   }
 }

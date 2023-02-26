@@ -2,20 +2,20 @@ using System.Collections.Generic;
 
 namespace Tracker.Models
 {
-  public class Orders
+  public class Order
   {
-    private static List<Orders> _instances = new List<Orders> {};
+    private static List<Order> _instances = new List<Order> {};
     public string Product {get; set;}
     public string Quantity {get; set;}
     public string Date {get; set;}
     public int Id {get;}
 
-    public Orders (string product, string quantity, string date){
+    public Order (string product, string quantity, string date){
       Product = product;
       Quantity = quantity;
       Date = date;
       Id = _instances.Count;
-      // _instances.Add(this);
+      _instances.Add(this);
     }
     public static void ClearAll()
     {
