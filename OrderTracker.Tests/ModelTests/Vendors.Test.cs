@@ -30,6 +30,13 @@ namespace Tracker.Tests
       string result = testVendor.Name;
       Assert.AreEqual("Smith", result);
     }
+    [TestMethod]
+    public void VendorConstructor_StoresVendorDescription_String()
+    {
+      string result = testVendor.Description;
+      Assert.AreEqual("Smith's Coffee", result);
+    }
+    
     
     
   }

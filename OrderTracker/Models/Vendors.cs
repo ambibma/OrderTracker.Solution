@@ -14,7 +14,7 @@ namespace Tracker.Models
   
     public Vendor (string name, string description, string cost, Order inputOrder){
       Name = name;
-      // Description = description;
+      Description = "";
       // Cost = cost;      
       // ID = _instances.Count;
       // Information = inputOrder;
