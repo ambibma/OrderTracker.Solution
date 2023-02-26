@@ -24,6 +24,12 @@ namespace Tracker.Tests
     {
       Assert.AreEqual(typeof(Vendor), testVendor.GetType());
     }
+    [TestMethod]
+    public void VendorConstructor_StoresVendorName_String()
+    {
+      string result = testVendor.Name;
+      Assert.AreEqual("Smith", result);
+    }
     
     
   }

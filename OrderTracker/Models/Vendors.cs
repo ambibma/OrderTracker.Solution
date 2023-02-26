@@ -9,11 +9,11 @@ namespace Tracker.Models
     public string Cost {get; set;}
     public int ID {get;}
 
-    public Order Information {get; set;}
+    public List<Order> Orders {get; set;}
     private static List<Vendor> _instances = new List<Vendor>{};
   
     public Vendor (string name, string description, string cost, Order inputOrder){
-      // Name = "";
+      Name = "";
       // Description = description;
       // Cost = cost;      
       // ID = _instances.Count;
