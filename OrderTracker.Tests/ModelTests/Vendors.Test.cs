@@ -49,6 +49,11 @@ namespace Tracker.Tests
      testVendor.AddOrder(testOrder);
      Assert.AreEqual(1, testVendor.Orders.Count);
     }
+    [TestMethod]
+    public void GetAll_ReturnsAllVendors_List()
+    {
+     Assert.AreEqual(1, Vendor.GetAll().Count);
+    }
     
     
     
