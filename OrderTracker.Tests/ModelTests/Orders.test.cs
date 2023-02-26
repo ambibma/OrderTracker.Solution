@@ -16,7 +16,7 @@ namespace Tracker.Tests
     [TestInitialize]
     public void TestInitialize()
     {
-      testOrder = new Order("Muffins", "1", "2/24/23");
+      testOrder = new Order("Muffins");
     }
     [TestMethod]
     public void OrderConstructor_CreatesNewOrder_Order()
@@ -46,6 +46,10 @@ namespace Tracker.Tests
     {
       int result = testOrder.Id;
       Assert.AreEqual(0, result);
+    }
+    public void FindId_ReturnsORderById_int()
+    {
+     Assert.AreEqual(testOrder, Order.Find(1));
     }
     
   }

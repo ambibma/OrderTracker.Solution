@@ -18,7 +18,7 @@ namespace Tracker.Tests
     public void TestInitialize()
     {
       testVendor = new Vendor("Smith", "Smith's Coffee");
-      testOrder = new Order("Muffins", "1", "2/24/23");
+      testOrder = new Order("Muffins");
     }
     [TestMethod]
     public void VendorConstructor_CreatesNewVendor_Vendor()
