@@ -15,7 +15,7 @@ namespace Tracker.Models
       Name = name;
       Description = description;
       // Cost = cost;      
-      Id = 1;
+      Id = _instances.Count;
       // Information = inputOrder;
       // _instances.Add(this);
     }
