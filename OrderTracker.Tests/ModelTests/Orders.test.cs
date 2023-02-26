@@ -16,7 +16,7 @@ namespace Tracker.Tests
     [TestInitialize]
     public void TestInitialize()
     {
-      testOrder = new Order("Muffins");
+      testOrder = new Order("Muffins","1","2/24/23" );
     }
     [TestMethod]
     public void OrderConstructor_CreatesNewOrder_Order()

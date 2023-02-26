@@ -10,10 +10,10 @@ namespace Tracker.Models
     public string Date {get; set;}
     public int Id {get;}
 
-    public Order (string product){
+    public Order (string product, string quantity, string date){
       Product = product;
-      Quantity = Quantity;
-      Date = Date;
+      Quantity = quantity;
+      Date = date;
       Id = _instances.Count;
       _instances.Add(this);
     }
@@ -21,9 +21,9 @@ namespace Tracker.Models
     {
       _instances.Clear();    
     }
-    // public static Order Find(int searchId)
-    // {
-    //   return _instances[searchId-1];
-    // }
+    public static Order Find(int searchId)
+    {
+      return _instances[searchId-1];
+    }
   }
 }
