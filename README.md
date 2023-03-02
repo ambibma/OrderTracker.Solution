@@ -35,6 +35,19 @@ Note: Will need to install .NET SDK onto your computer for this program to work 
     ```
 * This Will open the application in your web browser! Now you are ready to track your orders!
 
+* To Run tests on models. . . enter OrderTracker.Tests via the command line
+    ```bash
+    $ dotnet restore
+    ```
+* Then...
+    ```bash
+    $ dotnet test
+
+    ```
+* The test on both the all of the models should run    
+
+
+
 ## Known Bugs
 
 * None at the moment
