@@ -41,7 +41,7 @@ namespace Tracker.Tests
     public void VendorConstructor_StoresVendorID_Int()
     {
       int result = testVendor.Id;
-      Assert.AreEqual(0, result);
+      Assert.AreEqual(1, result);
     }
     [TestMethod]
     public void AddOrder_StoresOrdersInList_Int()

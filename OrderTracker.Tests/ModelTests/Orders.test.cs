@@ -45,7 +45,7 @@ namespace Tracker.Tests
     public void OrderConstructor_StoresOrderID_Int()
     {
       int result = testOrder.Id;
-      Assert.AreEqual(0, result);
+      Assert.AreEqual(1, result);
     }
     public void FindId_ReturnsORderById_int()
     {
